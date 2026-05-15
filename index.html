@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Choose the Right Diesel Fuel Tank | Tongyin Metal</title>
+  <meta name="description" content="A complete guide to choosing the right diesel fuel tank for trucks and generators. Covering types, sizing, materials, safety, and regulations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #0e0e0e;
+      --surface: #161616;
+      --border: #2a2a2a;
+      --accent: #e8a020;
+      --accent-dim: #a36c0e;
+      --text: #d4d0c8;
+      --text-muted: #7a7670;
+      --text-bright: #f0ece0;
+      --red: #c03a2b;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body: 'Crimson Pro', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 19px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    /* ── HEADER / HERO ── */
+    header {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 5vw 6rem;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 60% 30%, rgba(232,160,32,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(192,58,43,0.08) 0%, transparent 60%),
+        linear-gradient(160deg, #111 0%, #0a0a0a 100%);
+      z-index: -1;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(232,160,32,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(232,160,32,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      z-index: -1;
+      mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 100%);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent-dim);
+      padding: 6px 14px;
+      margin-bottom: 2rem;
+      width: fit-content;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 9vw, 8rem);
+      color: var(--text-bright);
+      line-height: 0.92;
+      letter-spacing: 0.02em;
+      max-width: 900px;
+      animation: fadeUp 0.8s 0.1s ease both;
+    }
+
+    h1 span { color: var(--accent); }
+
+    .hero-meta {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+      animation: fadeUp 0.8s 0.2s ease both;
+    }
+
+    .hero-meta .divider {
+      width: 1px; height: 30px;
+      background: var(--border);
+    }
+
+    .hero-meta span {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      right: 5vw;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      animation: fadeUp 1s 0.5s ease both;
+    }
+
+    .scroll-hint::after {
+      content: '';
+      width: 1px;
+      height: 50px;
+      background: linear-gradient(to bottom, var(--accent), transparent);
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(14,14,14,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ── MAIN LAYOUT ── */
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 5rem 2rem 8rem;
+    }
+
+    /* ── INTRO BLOCK ── */
+    .intro {
+      font-size: 1.25rem;
+      color: var(--text-bright);
+      font-weight: 300;
+      font-style: italic;
+      border-left: 3px solid var(--accent);
+      padding-left: 1.5rem;
+      margin-bottom: 4rem;
+      line-height: 1.6;
+      animation: fadeUp 0.8s 0.3s ease both;
+    }
+
+    /* ── SECTION HEADINGS ── */
+    h2 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--text-bright);
+      letter-spacing: 0.04em;
+      margin-top: 4rem;
+      margin-bottom: 1.2rem;
+      position: relative;
+    }
+
+    h2::before {
+      content: attr(data-num);
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--accent);
+      position: absolute;
+      top: -1.2rem;
+      left: 0;
+      letter-spacing: 0.1em;
+    }
+
+    h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      margin-top: 2.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p { margin-bottom: 1.2rem; }
+
+    a.inline-link {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-color: var(--accent-dim);
+      text-underline-offset: 3px;
+      transition: color 0.2s, text-decoration-color 0.2s;
+    }
+
+    a.inline-link:hover {
+      color: #f0c060;
+      text-decoration-color: #f0c060;
+    }
+
+    /* ── CALLOUT BOX ── */
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 1.5rem 1.8rem;
+      margin: 2.5rem 0;
+      position: relative;
+    }
+
+    .callout::before {
+      content: 'KEY INSIGHT';
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+
+    .callout p { margin: 0; font-style: italic; }
+
+    /* ── STAT CARDS ── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      padding: 1.8rem 1.5rem;
+    }
+
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      color: var(--accent);
+      line-height: 1;
+      display: block;
+    }
+
+    .stat-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-top: 0.4rem;
+      display: block;
+    }
+
+    /* ── TYPE CARDS ── */
+    .type-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+
+    .type-card {
+      background: var(--surface);
+      padding: 1.5rem;
+      transition: background 0.2s;
+    }
+
+    .type-card:hover { background: #1e1e1e; }
+
+    .type-icon {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .type-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--text-bright);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+
+    .type-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ── MATERIAL TABLE ── */
+    .material-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 0.92rem;
+    }
+
+    .material-table thead tr {
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .material-table th {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      padding: 0.8rem 1rem;
+      text-align: left;
+    }
+
+    .material-table td {
+      padding: 0.9rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .material-table tr:last-child td { border-bottom: none; }
+
+    .material-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+    .pill {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      padding: 2px 8px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .pill-good { background: rgba(60,160,60,0.2); color: #6dbb6d; }
+    .pill-mid { background: rgba(232,160,32,0.2); color: var(--accent); }
+    .pill-low { background: rgba(192,58,43,0.2); color: #e06050; }
+
+    /* ── CHECKLIST ── */
+    .checklist {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .checklist li {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 0.95rem;
+    }
+
+    .checklist li::before {
+      content: '▸';
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ── FAQ ── */
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      padding: 1.4rem 0;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-bright);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .faq-q .icon {
+      font-family: var(--font-mono);
+      font-size: 1.2rem;
+      color: var(--accent);
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+
+    .faq-q.open .icon { transform: rotate(45deg); }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.3s;
+    }
+
+    .faq-a.open {
+      max-height: 400px;
+      padding-bottom: 1.2rem;
+    }
+
+    .faq-a p { font-size: 0.96rem; color: var(--text); margin: 0; }
+
+    /* ── CTA BANNER ── */
+    .cta-banner {
+      margin: 5rem 0 3rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(232,160,32,0.08) 0%, transparent 70%);
+    }
+
+    .cta-banner h2 {
+      font-size: 2.2rem;
+      margin-top: 0;
+    }
+
+    .cta-banner h2::before { display: none; }
+
+    .cta-banner p {
+      color: var(--text-muted);
+      max-width: 480px;
+      margin: 0 auto 1.8rem;
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--accent);
+      color: #0e0e0e;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      text-decoration: none;
+      padding: 0.9rem 2rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn:hover {
+      background: #f0c060;
+      transform: translateY(-1px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: gap;
+      gap: 1rem;
+    }
+
+    footer span {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    footer a:hover { color: #f0c060; }
+
+    /* ── DIVIDER ── */
+    .rule {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 3rem 0;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .type-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      main { padding: 3rem 1.2rem 6rem; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .cta-banner { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="https://tongyinnmetal.com.my/" class="nav-logo" target="_blank" rel="noopener">Tongyin Metal</a>
+    <ul class="nav-links">
+      <li><a href="#types">Tank Types</a></li>
+      <li><a href="#sizing">Sizing</a></li>
+      <li><a href="#materials">Materials</a></li>
+      <li><a href="#safety">Safety</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header>
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="badge">Industrial Guide · Diesel Storage Systems</div>
+    <h1>How to Choose the Right <span>Diesel Fuel</span> Tank</h1>
+    <div class="hero-meta">
+      <span>For Trucks & Generators</span>
+      <div class="divider"></div>
+      <span>Complete Industry Guide</span>
+      <div class="divider"></div>
+      <span>~14 min read</span>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <p class="intro">
+      Choosing the right diesel fuel tank is more than a capacity decision — it shapes your operational safety, fuel quality, maintenance costs, and regulatory standing for years ahead.
+    </p>
+
+    <!-- WHY IT MATTERS -->
+    <section class="reveal" id="why">
+      <h2 data-num="01 — WHY IT MATTERS">Why Choosing Right Matters</h2>
+      <p>
+        The performance of trucks and generators depends directly on how clean and stable the fuel supply is. Contaminated diesel can reduce engine efficiency by up to 10–15 percent in industrial machinery, leading to higher maintenance frequency and unexpected breakdowns.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-num">15%</span>
+          <span class="stat-label">Efficiency loss from contaminated diesel</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">50%</span>
+          <span class="stat-label">Fewer refuel stops with extended-range tanks</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">72hrs</span>
+          <span class="stat-label">Target autonomous runtime for critical facilities</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">20yrs</span>
+          <span class="stat-label">Lifespan of well-maintained steel tanks</span>
+        </div>
+      </div>
+
+      <p>
+        Safety is equally critical. Diesel fuel is less volatile than gasoline, but improper storage still creates fire hazards and environmental risks. Companies that invest in certified fuel storage systems tend to experience fewer compliance issues and lower environmental penalties.
+      </p>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- TYPES -->
+    <section class="reveal" id="types">
+      <h2 data-num="02 — TYPES">Types of Diesel Fuel Tanks</h2>
+      <p>
+        Diesel tanks are classified based on placement and mobility. Each type suits different operational environments — from permanent industrial facilities to remote construction zones.
+      </p>
+
+      <div class="type-grid">
+        <div class="type-card">
+          <div class="type-icon">🏗️</div>
+          <div class="type-title">Above-Ground</div>
+          <p class="type-desc">Easy inspection and maintenance. Ranges from hundreds to thousands of litres. Ideal for farms, construction sites, and industrial yards.</p>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">🌍</div>
+          <div class="type-title">Underground</div>
+          <p class="type-desc">Protects fuel from temperature swings. Reduces surface fire risk. Higher installation cost but essential for fuel stations and commercial facilities.</p>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">🚛</div>
+          <div class="type-title">Portable</div>
+          <p class="type-desc">Mounted on trailers or skid frames. 200 L to 2,000+ L. Includes built-in pumps for dynamic environments with changing fuel demand.</p>
+        </div>
+        <div class="type-card">
+          <div class="type-icon">⚡</div>
+          <div class="type-title">Sub-Base (Generator)</div>
+          <p class="type-desc">Installed beneath generators. Double-wall protection. Perfect for data centres and hospitals where space efficiency is critical.</p>
+        </div>
+        <div class="type-card" style="grid-column: 1 / -1;">
+          <div class="type-icon">🛣️</div>
+          <div class="type-title">Auxiliary Truck Tank</div>
+          <p class="type-desc">Added to vehicles to extend range by 30–50%. Built from aluminium or steel. Integrates with the main fuel system — compliance and balance are essential. If you need a custom-fabricated <a href="https://tongyinnmetal.com.my/" class="inline-link" target="_blank" rel="noopener">diesel fuel tank for your truck</a>, professional fabrication ensures proper fit and road compliance.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- TRUCK VS GENERATOR -->
+    <section class="reveal">
+      <h2 data-num="03 — COMPARISON">Truck Tanks vs Generator Tanks</h2>
+      <p>
+        These two tank categories serve entirely different environments. Truck tanks handle movement and vibration; generator tanks prioritize stable, uninterrupted fuel delivery.
+      </p>
+
+      <h3>Trucks</h3>
+      <p>
+        Truck fuel systems prioritize lightweight construction for fuel economy. Aluminium is common because it reduces vehicle weight measurably. Sensor-based fuel level indicators connect directly to the dashboard. Best for logistics, freight, and long-distance routes where fuel availability may be uncertain.
+      </p>
+
+      <h3>Generators</h3>
+      <p>
+        Generator tanks use steel or double-wall designs where durability and leak prevention outweigh weight concerns. Integrated monitoring systems track fuel level and consumption rate. For backup power in hospitals, data centres, and factories, the tank must sustain operation through full outage periods — not just daily use.
+      </p>
+
+      <div class="callout">
+        <p>Size generator tanks based on expected outage duration, not just daily consumption. A 72-hour autonomy target is the industry standard for critical facilities.</p>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- SIZING -->
+    <section class="reveal" id="sizing">
+      <h2 data-num="04 — SIZING">How to Choose the Right Tank Size</h2>
+
+      <h3>Calculate Fuel Usage</h3>
+      <p>
+        Diesel generators consume between <strong style="color:var(--text-bright)">0.2 to 0.4 litres per kWh</strong> depending on load. Trucks typically return <strong style="color:var(--text-bright)">3 to 6 km per litre</strong> based on load weight and terrain. Accurate calculation prevents both under-sizing (constant refilling) and over-sizing (wasted cost and space).
+      </p>
+
+      <h3>Estimate Runtime Requirements</h3>
+      <p>
+        Critical facilities plan for 24 to 72 hours of autonomous operation during emergencies. For trucks, runtime translates to travel distance — longer routes demand higher capacity.
+      </p>
+
+      <h3>Refilling Frequency</h3>
+      <p>
+        Frequent refuelling raises labour and logistics costs, especially on remote sites or large farms. Reducing refill cycles improves operational uptime and reduces interruptions.
+      </p>
+
+      <h3>Safety Buffer</h3>
+      <p>
+        Always add <strong style="color:var(--text-bright)">10–20% extra capacity</strong> beyond calculated requirements. This covers unexpected demand spikes and delivery delays — and prevents tanks from running near maximum capacity continuously, which reduces pressure-related stress.
+      </p>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- MATERIALS -->
+    <section class="reveal" id="materials">
+      <h2 data-num="05 — MATERIALS">Best Materials for Diesel Tanks</h2>
+      <p>
+        Material choice determines durability, weight, corrosion resistance, and long-term maintenance cost. Understanding the trade-offs helps match material to application. For custom fabrication of <a href="https://tongyinnmetal.com.my/" class="inline-link" target="_blank" rel="noopener">steel or aluminium diesel fuel tanks</a>, working with an experienced metal fabricator ensures the right material grade and weld quality for your operating conditions.
+      </p>
+
+      <table class="material-table">
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Strength</th>
+            <th>Weight</th>
+            <th>Corrosion</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color:var(--text-bright)">Steel</strong></td>
+            <td><span class="pill pill-good">Excellent</span></td>
+            <td><span class="pill pill-low">Heavy</span></td>
+            <td><span class="pill pill-mid">Treated</span></td>
+            <td>Stationary industrial, above-ground</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--text-bright)">Aluminium</strong></td>
+            <td><span class="pill pill-mid">Good</span></td>
+            <td><span class="pill pill-good">Lightweight</span></td>
+            <td><span class="pill pill-good">Good</span></td>
+            <td>Trucks, long-haul transport</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--text-bright)">Polyethylene</strong></td>
+            <td><span class="pill pill-low">Moderate</span></td>
+            <td><span class="pill pill-good">Light</span></td>
+            <td><span class="pill pill-good">Excellent</span></td>
+            <td>Portable tanks, medium storage</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- SAFETY -->
+    <section class="reveal" id="safety">
+      <h2 data-num="06 — SAFETY">Important Safety Features</h2>
+
+      <ul class="checklist">
+        <li>
+          <div>
+            <strong style="color:var(--text-bright)">Double-Wall Protection</strong> — An inner fuel tank with an outer containment layer. Sensors between walls detect moisture or fuel presence early. Often mandatory in regulated commercial storage environments.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong style="color:var(--text-bright)">Leak Prevention System</strong> — Reinforced joints, sealed valves, and pressure-tested components. Prevents external contamination from water and dust entering the tank.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong style="color:var(--text-bright)">Venting & Pressure Control</strong> — Pressure relief valves that handle thermal expansion. Without proper venting, temperature cycles create structural stress over time.
+          </div>
+        </li>
+        <li>
+          <div>
+            <strong style="color:var(--text-bright)">Lockable Caps & Anti-Theft</strong> — Tamper-resistant locks and reinforced access points. Electronic monitoring can track fuel usage — important on unattended construction sites.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- PLACEMENT -->
+    <section class="reveal">
+      <h2 data-num="07 — PLACEMENT">Tank Placement & Installation</h2>
+
+      <h3>Indoor vs Outdoor</h3>
+      <p>
+        Indoor installations require strong ventilation to prevent vapour buildup and stricter fire safety compliance. Outdoor tanks are easier to access and maintain but need weather protection and physical barrier measures.
+      </p>
+
+      <h3>Truck Mounting</h3>
+      <p>
+        Auxiliary tanks mount on chassis or side frames using reinforced brackets and vibration-dampening materials. Incorrect mounting affects vehicle balance and increases maintenance costs. For <a href="https://tongyinnmetal.com.my/" class="inline-link" target="_blank" rel="noopener">custom truck tank fabrication and mounting systems</a>, precise engineering prevents compliance issues and structural failure on long routes.
+      </p>
+
+      <h3>Generator Placement</h3>
+      <p>
+        Position tanks close to the generator to keep fuel lines short — this reduces pressure loss and improves delivery efficiency. Sub-base configurations save floor space and simplify fuel flow design in commercial buildings.
+      </p>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- REGULATIONS -->
+    <section class="reveal">
+      <h2 data-num="08 — REGULATIONS">Regulations & Compliance</h2>
+      <p>Compliance requirements vary by country, industry, and tank capacity — but the core areas are consistent.</p>
+
+      <ul class="checklist">
+        <li>
+          <strong style="color:var(--text-bright)">Environmental Rules</strong> — Secondary containment is mandatory in many regions to prevent groundwater contamination. Regular inspection logs are required.
+        </li>
+        <li>
+          <strong style="color:var(--text-bright)">Fire Safety Standards</strong> — Proper ventilation, minimum distances from ignition sources, and fire-resistant materials. Large installations often require fire suppression systems nearby.
+        </li>
+        <li>
+          <strong style="color:var(--text-bright)">Transport Compliance</strong> — Auxiliary truck tanks must meet capacity limits and mounting standards. Non-compliance causes road penalties and complicates cross-border commercial logistics.
+        </li>
+      </ul>
+
+      <div class="callout">
+        <p>Verify local compliance standards before selecting tank type or capacity. Retrofitting for compliance after installation costs significantly more than planning correctly from the start.</p>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- MISTAKES -->
+    <section class="reveal">
+      <h2 data-num="09 — MISTAKES">Common Mistakes to Avoid</h2>
+      <ul class="checklist">
+        <li><strong style="color:var(--text-bright)">Wrong tank size</strong> — Too small means constant refilling. Too large means fuel stagnation and slow diesel turnover that degrades quality.</li>
+        <li><strong style="color:var(--text-bright)">Ignoring local regulations</strong> — Different regions have specific rules on capacity, fire safety distance, and containment. Discovering this after installation is expensive.</li>
+        <li><strong style="color:var(--text-bright)">Low-quality materials</strong> — Poor-grade steel or untested plastics are prone to corrosion and leakage. Issues develop gradually but escalate quickly under continuous fuel exposure.</li>
+        <li><strong style="color:var(--text-bright)">Neglecting maintenance</strong> — Diesel tanks need periodic cleaning. Without it, water contamination, microbial growth, and sludge form — directly damaging engines and injectors.</li>
+      </ul>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- MAINTENANCE -->
+    <section class="reveal">
+      <h2 data-num="10 — MAINTENANCE">Maintenance Tips</h2>
+
+      <h3>Prevent Water Contamination</h3>
+      <p>Even small amounts of water reduce combustion efficiency and damage high-pressure injectors. Use proper sealing and drain water accumulation points regularly.</p>
+
+      <h3>Check for Rust & Leaks</h3>
+      <p>Corrosion begins internally and becomes visible only after structural weakening. Schedule regular visual inspection combined with pressure testing for larger tanks.</p>
+
+      <h3>Clean Regularly</h3>
+      <p>Sediment and microbial sludge accumulate when tanks sit full for extended periods. Periodic cleaning maintains fuel flow and protects engine components in heavy machinery.</p>
+
+      <h3>Monitor Fuel Quality</h3>
+      <p>Stored diesel can begin degrading within 6 to 12 months. In industrial applications, test fuel quality before critical usage — especially after extended storage periods.</p>
+    </section>
+
+    <hr class="rule" />
+
+    <!-- FAQ -->
+    <section class="reveal" id="faq">
+      <h2 data-num="11 — FAQ">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What size diesel fuel tank do I need?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Calculate daily or hourly fuel consumption for your equipment, then add a 10–20% safety buffer. For generators, base sizing on required outage duration — not just average daily use. For trucks, factor in route length and refuelling stop availability.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Are portable diesel tanks safe?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes — when they meet industrial safety standards with proper sealing, venting, and locking systems. Safety depends primarily on correct usage and regular maintenance rather than the tank type itself.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How long can diesel stay in a storage tank?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Diesel remains stable for 6 to 12 months under proper conditions. Temperature fluctuations, contamination, and poor tank cleanliness accelerate degradation. For long-term storage, use fuel stabilisers and monitor quality regularly.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What is the best material for a diesel fuel tank?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>There is no single best material. Steel excels in strength for stationary industrial use; aluminium suits trucks where weight matters; polyethylene offers corrosion resistance for portable systems. Match material to your environment and application.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do diesel fuel tanks need secondary containment?
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>In many regulated environments, yes — secondary containment is required to prevent environmental contamination from leaks. This is standard practice in industrial and commercial fuel storage, and is often a legal requirement rather than an optional upgrade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-banner reveal">
+      <h2>Need a Custom Diesel Fuel Tank?</h2>
+      <p>Tongyin Metal specialises in custom exhaust systems and <strong>diesel fuel tanks</strong> for trucks, generators, and industrial applications — fabricated to your exact specifications in Malaysia.</p>
+      <a href="https://tongyinnmetal.com.my/" class="btn" target="_blank" rel="noopener">
+        Visit Tongyin Metal →
+      </a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2025 Tongyin Metal · All rights reserved</span>
+    <a href="https://tongyinnmetal.com.my/" target="_blank" rel="noopener">tongyinnmetal.com.my ↗</a>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => observer.observe(el));
+
+    // FAQ toggle
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const isOpen = answer.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-a.open').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-q.open').forEach(q => q.classList.remove('open'));
+
+      if (!isOpen) {
+        answer.classList.add('open');
+        btn.classList.add('open');
+      }
+    }
+  </script>
+
+</body>
+</html>
